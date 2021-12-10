@@ -53,7 +53,7 @@
       <b:if cond='data:blog.metaDescription'>
         <meta expr:content='data:blog.metaDescription' name='description'/>
         <b:else/>
-        <meta content='Webbuna suka berbagi dan belajar informasi dan pengetahuan bersama jangan lupa kunjungi webbuna.my.id' name='description'/>
+        <meta content='' name='description'/>
       </b:if>
       <script type='application/ld+json'>{ &quot;@context&quot;: &quot;http://schema.org&quot;, &quot;@type&quot;: &quot;WebSite&quot;, &quot;url&quot;: &quot;<data:blog.homepageUrl/>&quot;, &quot;potentialAction&quot;: { &quot;@type&quot;: &quot;SearchAction&quot;, &quot;target&quot;: &quot;<data:blog.homepageUrl/>?q={search_term}&quot;, &quot;query-input&quot;: &quot;required name=search_term&quot; } }</script>
 
@@ -2457,7 +2457,6 @@
 
  <b:include data='post' name='relatedpost'/>
 
- <b:include data='post' name='postsubscribebox'/>
 </div>
 </div>
 <b:default/>
@@ -2650,30 +2649,7 @@
       </div>
     </div>
   </b:includable>
-  <b:includable id='postsubscribebox' var='post'>
-    <div class='berlangganan-box'>
-      <h2>Dapatkan Tips Menarik Setiap Harinya!</h2>
-      <ul class='list--usp'>
-        <li>Dapatkan tips dan trik yang belum pernah kamu tau sebelumnya</li>
-        <li>Jadilah orang pertama yang mengetahui hal-hal baru di dunia teknologi</li>
-        <li> <strong>Buruaaan !!!</strong></li>
-      </ul>
-      <form action='https://feedburner.google.com/fb/a/mailverify' method='post' onsubmit='window.open(&apos;https://feedburner.google.com/fb/a/mailverify?uri=jejaker&apos;, &apos;popupwindow&apos;, &apos;scrollbars=yes,width=550,height=520&apos;);return true' target='popupwindow'>
-        <div class='email-group'>
-          <input class='your-name' name='name' placeholder='Nama Anda...' type='text'/>
-          <input class='email-address' name='email' placeholder='Email Anda...' type='text'/>
-        </div>
-        <input name='uri' type='hidden' value='webbuna'/>
-        <input name='loc' type='hidden' value='en_US'/>
-        <p><input class='submit-email' type='submit' value='Ya, Saya Mau!'/></p>
-      </form>
-    </div>
-<!-- 
-...
-Edit ID feedburner jejaker di atas dengan ID feedburner milik sobat 
-...
--->
-</b:includable>
+
 <b:includable id='postthumbnail' var='post'>
   <div class='img-thumbnail'>
     <b:if cond='data:post.firstImageUrl'>
