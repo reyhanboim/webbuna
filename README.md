@@ -1,6 +1,6 @@
 # webbuna
 
-To Access the file direcly follow the step
+To Access the file directly follow the step
 
 # direct link
 https://cdn.jsdelivr.net/gh/reyhanboim/webbuna/file_name
